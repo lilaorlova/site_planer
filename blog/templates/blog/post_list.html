@@ -1,0 +1,105 @@
+{% load static %}
+<html>
+    <head>
+    	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Diary</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <style type="text/css">
+   body { margin: 0; }
+   #sign_in, #ima, #text_1, #text_2, #sign_up, #text_3 { position: absolute; } 
+   #sign_in, #ima, #text_1, #text_2, #sign_up, #text_3 { overflow: auto; padding: 10px; }
+   #sign_in {
+    top: 8%; /* Расстояние от верхнего края */
+    left: 20%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #sign_up {
+    top: 8%; /* Расстояние от верхнего края */
+    left: 25%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+
+    #ima {
+    top: 30%; /* Расстояние от верхнего края */
+    left: 45%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+      .layer1 {
+    font: 12pt sans-serif;  
+   } 
+   h1 {
+    font: 200% serif;
+   }
+   h2 {
+    font: 200% serif;
+   }
+
+   h1 { 
+    font-size: 300%; /* Размер шрифта в процентах */ 
+   } 
+
+   h2 { 
+    font-size: 170%; /* Размер шрифта в процентах */ 
+   } 
+
+    #text_1 {
+    top: 30%; /* Расстояние от верхнего края */
+    left: 25%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #text_2 {
+    top: 50px; /* Расстояние от верхнего края */
+    left: 520px; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #text_3 {
+    top: 30%; /* Расстояние от верхнего края */
+    left: 20%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+  </style>
+    </head>
+    <body>
+    	{% if user.is_authenticated %}
+    		<div id="sign_in"> 
+    			<h4><a href="/accounts/logout/">sign out</a></h4>
+    		</div>
+        <div id="text_1">
+          <h2><a href="planer/">Make a plan</a></h2>
+          <p>(some text)<br>u are beautiful<br>u are beautiful<br>u are beautiful</p>
+        </div>
+        {% else %}
+        	<div id="sign_in">
+        	<h4><a href="/accounts/login/">sign in</a></h4>
+        </div>
+
+        <div id="sign_up">
+          <h4><a href="/accounts/signup/">sign up</a></h4>
+        </div>
+
+        <div id="text_1">
+          <h2>step by step to dream</h2>
+          <p>(some text)<br>u are beautiful<br>u are beautiful<br>u are beautiful</p>
+        </div>
+
+
+        {% endif %}
+
+        <div class="image" id="ima">
+            {% load static %}
+            <img src="{% static 'blog/plan.jpg' %}" width="400" height="400" alt="My image"/>
+        </div>
+
+        <div id="text_2">
+        	<h1><a href="/">Your planer</a></h1>
+        </div>
+    </body>
+</html>
