@@ -27,4 +27,3 @@ def index(request):
     print(context)
     print("HEY  ")
     return render(request, 'UserInfo/index.html', context)
-

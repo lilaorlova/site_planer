@@ -3,7 +3,7 @@
 <title>User Information Form</title>
 </head>
 <body>
-<form action="?" method="POST">
+<form action="/planer/" method="POST">
   <label for="your_name">Your name: </label>
   <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
   {% csrf_token %}
@@ -11,7 +11,7 @@
   <input type="submit" name="submit" value="Submit"/>
 </form>
 
-{% if submitbutton == "submit" %}
+{% if submitbutton == "submit" %} 
   <h1>Your first name is {{ firstname }}</h1>
   <h1>Your last name is {{ lastname }}</h1>
   <h1>Your email is {{ emailvalue }}</h1>
