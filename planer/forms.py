@@ -2,6 +2,7 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.forms import ModelForm
+from .models import Post
 
 class MyForm(UserCreationForm):
     email = forms.EmailField(max_length=200, help_text='Required')
@@ -13,3 +14,9 @@ class UserForm(forms.Form):
     first_name= forms.CharField(max_length=100)
     last_name= forms.CharField(max_length=100)
     email= forms.EmailField()
+
+class PostForm(forms.ModelForm):
+
+    class Meta:
+        model = Post
+        fields = ('title', 'text',)

@@ -1,29 +1,37 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from .forms import UserForm
+from django.http import HttpResponse
+from django.shortcuts import get_object_or_404, render
+from .forms import PostForm
+from django.shortcuts import redirect
+from django.utils import timezone
+from .models import Post
+from django.contrib.auth.models import User
 
 def post_list(request):
-    return render(request, 'planer/post_list.html', {})
+    user=User.objects.get(username=request.user.username)
+    plans=Post.objects.filter(author=user).order_by("created_date")
+    return render(request, 'planer/post_list.html', {"plans":plans})
 
-from django.shortcuts import render
-from .forms import UserForm
+def profile(request):
+    return render(request, 'planer/profile.html', {})
 
-def index(request):
-    firstname=''
-    lastname=''
-    emailvalue=''
-    submitbutton = ''
+def post_new(request):
     if request.method == "POST":
-        form = UserForm(request.POST)
+        form = PostForm(request.POST)
         if form.is_valid():
-            firstname= form.get("first_name")
-            lastname= form.get("last_name")
-            emailvalue= form.get("email")
-            submitbutton = form.get("submittion")
-
-    context= {'form': form, 'firstname': firstname, 
-            'lastname':lastname, 'submitbutton': submitbutton,
-            'emailvalue':emailvalue}
-    print(context)
-    print("HEY  ")
-    return render(request, 'UserInfo/index.html', context)
+            Post.objects.create(author=User.objects.get(username=request.user.username),
+                                title=form["title"].value(),
+                                text=form["text"].value(),
+                                created_date=timezone.now()
+                                )
+            print(form["title"].value())
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('post_new')
+    else:
+        form = PostForm()
+    return render(request, 'planer/post_edit.html', {'form': form})
