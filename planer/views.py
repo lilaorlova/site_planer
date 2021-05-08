@@ -8,8 +8,13 @@ from django.shortcuts import redirect
 from django.utils import timezone
 from .models import Post
 from django.contrib.auth.models import User
+import calendar
+from datetime import datetime
+
 
 def post_list(request):
+    c = calendar.HTMLCalendar()
+    html_out = c.formatmonth(datetime.today().year, datetime.today().month)
     user=User.objects.get(username=request.user.username)
     plans=Post.objects.filter(author=user).order_by("created_date")
     return render(request, 'planer/post_list.html', {"plans":plans})
