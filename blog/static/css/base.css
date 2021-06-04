@@ -1,0 +1,229 @@
+
+@media screen and (max-width:800px) {
+   body { margin: 0; }
+   #sign_in, #ima_1, #text_1, #text_2, #sign_up, #text_3, #sign_out, #ima_2, #ima_3, #ima_4, #about, #telephone, #contacts, #name { position: absolute; } 
+   #sign_in, #ima_1, #text_1, #text_2, #sign_up, #text_3, #sign_out, #ima_2, #ima_2, #ima_4, #about, #telephone, #contacts, #name { overflow: auto; padding: 10px; }
+
+   #sign_in {
+    top: 10%; /* Расстояние от верхнего края */
+    left: 28%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+   #name {
+    top: 5%; /* Расстояние от верхнего края */
+    left: 66%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #sign_up {
+    top: 10%; /* Расстояние от верхнего края */
+    left: 42%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #sign_out {
+    top: 5%; /* Расстояние от верхнего края */
+    left: 74%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #about {
+    top: 10%; /* Расстояние от верхнего края */
+    left: 11%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #telephone {
+    top: 96%; /* Расстояние от верхнего края */
+    left: 55%; /* Расстояние от левого края */ 
+    bottom: 10; right: 0;
+   }
+
+    #ima_1 {
+      display: none;
+   }
+
+    #ima_2 {
+      display: none;
+   }
+
+    #ima_3 {
+    top: 9%; /* Расстояние от верхнего края */
+    left: 3%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #ima_4 {
+    top: 30%; /* Расстояние от верхнего края */
+    left: 7%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    h3 {
+    font: 140% serif;
+   }
+
+      .layer1 {
+    font: 12pt sans-serif;  
+   } 
+  h1 { font-family: 'Nunito', sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+  h2 {font-family: 'Nunito', sans-serif;}
+  h3{font-family: 'Nunito', sans-serif;}
+  h4{font-family: 'Nunito', sans-serif;}
+
+   h1 { 
+    font-size: 300%; /* Размер шрифта в процентах */ 
+   } 
+
+   h2 { 
+    font-size: 301%; /* Размер шрифта в процентах */ 
+   } 
+
+    #text_1 {
+    top: 30%; /* Расстояние от верхнего края */
+    left: 10%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #text_2 {
+    top: 4%; /* Расстояние от верхнего края */
+    left: 10%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #text_3 {
+    top: 30%; /* Расстояние от верхнего края */
+    left: 20%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    .black_color {
+    color:black;
+   }
+    .gray_color {
+    color:#1b5e34;
+   }
+   #contacts {
+    top: 88%; /* Расстояние от верхнего края */
+    left: 10%;
+    bottom: 0; right: 0;
+   }
+}
+
+@media screen and (min-width:800px) {
+     body { margin: 0; }
+   #sign_in, #ima_1, #text_1, #text_2, #sign_up, #text_3, #sign_out, #ima_2, #ima_3, #ima_4, #about, #telephone, #contacts, #name { position: absolute; } 
+   #sign_in, #ima_1, #text_1, #text_2, #sign_up, #text_3, #sign_out, #ima_2, #ima_2, #ima_4, #about, #telephone, #contacts, #name { overflow: auto; padding: 10px; }
+
+    #contacts {
+    top: 80%; /* Расстояние от верхнего края */
+    left: 10%;
+    bottom: 0; right: 0;
+  }
+
+   #sign_in {
+    top: 3%; /* Расстояние от верхнего края */
+    left: 60%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+   #name {
+    top: 5%; /* Расстояние от верхнего края */
+    left: 69%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #sign_up {
+    top: 3%; /* Расстояние от верхнего края */
+    left: 69%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #sign_out {
+    top: 5%; /* Расстояние от верхнего края */
+    left: 74%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #about {
+    top: 3%; /* Расстояние от верхнего края */
+    left: 50%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #telephone {
+    top: 70%; /* Расстояние от верхнего края */
+    left: 55%; /* Расстояние от левого края */ 
+    bottom: 10; right: 0;
+   }
+
+    #ima_1 {
+    top: 25%; /* Расстояние от верхнего края */
+    left: 45%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #ima_2 {
+    top: 13%; /* Расстояние от верхнего края */
+    left: 45%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #ima_3 {
+    top: 9%; /* Расстояние от верхнего края */
+    left: 3%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #ima_4 {
+    top: 30%; /* Расстояние от верхнего края */
+    left: 7%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    h3 {
+    font: 140% serif;
+   }
+
+      .layer1 {
+    font: 12pt sans-serif;  
+   } 
+  h1 { font-family: 'Nunito', sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+  h2 {font-family: 'Nunito', sans-serif;}
+  h3{font-family: 'Nunito', sans-serif;}
+  h4{font-family: 'Nunito', sans-serif;}
+
+   h1 { 
+    font-size: 300%; /* Размер шрифта в процентах */ 
+   } 
+
+   h2 { 
+    font-size: 301%; /* Размер шрифта в процентах */ 
+   } 
+
+    #text_1 {
+    top: 30%; /* Расстояние от верхнего края */
+    left: 10%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #text_2 {
+    top: 4%; /* Расстояние от верхнего края */
+    left: 10%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #text_3 {
+    top: 30%; /* Расстояние от верхнего края */
+    left: 20%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    .black_color {
+    color:black;
+   }
+    .gray_color {
+    color:#1b5e34;
+   }
+}

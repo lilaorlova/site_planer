@@ -1,0 +1,163 @@
+@media screen and (max-width:800px) {
+
+    body { margin: 0; }
+   #sign_in, #ima, #text_1, #text_2, #sign_up, #text_3, #text_4 { position: absolute; } 
+   #sign_in, #ima, #text_1, #text_2, #sign_up, #text_3, #text_4 { overflow: auto; padding: 10px; }
+   #sign_in {
+    top: 8%; /* Расстояние от верхнего края */
+    left: 83%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #sign_up {
+    top: 8%; /* Расстояние от верхнего края */
+    left: 25%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+
+    #ima {
+    display: none;
+   }
+
+      .layer1 {
+    font: 12pt sans-serif;  
+   } 
+   h1 {
+    font: 200% serif;
+   }
+   h2 {
+    font: 200% serif;
+   }
+   h4 {
+    font: 150% serif;
+   }
+
+   h1 { 
+    font-size: 300%; /* Размер шрифта в процентах */ 
+   } 
+
+   h2 { 
+    font-size: 170%; /* Размер шрифта в процентах */ 
+   } 
+
+    #text_1 {
+    top: 13%; /* Расстояние от верхнего края */
+    left: 10%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #text_2 {
+    top: 4%; /* Расстояние от верхнего края */
+    left: 10%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #text_3 {
+    top: 30%; /* Расстояние от верхнего края */
+    left: 20%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #text_4 {
+    top: 25%; /* Расстояние от верхнего края */
+    left: 10%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    .black_color {
+  color:black;
+  }
+
+  .gray_color {
+    color:#1b5e34;
+   }
+
+  h1 { font-family: 'Nunito', sans-serif; font-size: 37px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+  h2 {font-family: 'Nunito', sans-serif;}
+  h3 { font-family: Quicksand; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
+  h4{font-family: 'Nunito', sans-serif;}
+}
+
+@media screen and (min-width:800px) {
+
+      body { margin: 0; }
+   #sign_in, #ima, #text_1, #text_2, #sign_up, #text_3, #text_4 { position: absolute; } 
+   #sign_in, #ima, #text_1, #text_2, #sign_up, #text_3, #text_4 { overflow: auto; padding: 10px; }
+   #sign_in {
+    top: 8%; /* Расстояние от верхнего края */
+    left: 83%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #sign_up {
+    top: 8%; /* Расстояние от верхнего края */
+    left: 25%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+
+    #ima {
+    top: 30%; /* Расстояние от верхнего края */
+    left: 65%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+      .layer1 {
+    font: 12pt sans-serif;  
+   } 
+   h1 {
+    font: 200% serif;
+   }
+   h2 {
+    font: 200% serif;
+   }
+   h4 {
+    font: 150% serif;
+   }
+
+   h1 { 
+    font-size: 300%; /* Размер шрифта в процентах */ 
+   } 
+
+   h2 { 
+    font-size: 170%; /* Размер шрифта в процентах */ 
+   } 
+
+    #text_1 {
+    top: 13%; /* Расстояние от верхнего края */
+    left: 10%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #text_2 {
+    top: 4%; /* Расстояние от верхнего края */
+    left: 10%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #text_3 {
+    top: 30%; /* Расстояние от верхнего края */
+    left: 20%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    #text_4 {
+    top: 25%; /* Расстояние от верхнего края */
+    left: 10%; /* Расстояние от левого края */ 
+    bottom: 0; right: 0;
+   }
+
+    .black_color {
+  color:black;
+  }
+
+  .gray_color {
+    color:#1b5e34;
+   }
+
+  h1 { font-family: 'Nunito', sans-serif; font-size: 37px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+  h2 {font-family: 'Nunito', sans-serif;}
+  h3 { font-family: Quicksand; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
+  h4{font-family: 'Nunito', sans-serif;}
+}

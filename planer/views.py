@@ -26,17 +26,12 @@ def post_new(request):
     if request.method == "POST":
         form = PostForm(request.POST)
         if form.is_valid():
-            Post.objects.create(author=User.objects.get(username=request.user.username),
-                                title=form["title"].value(),
-                                text=form["text"].value(),
-                                created_date=timezone.now()
-                                )
             print(form["title"].value())
             post = form.save(commit=False)
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('post_new')
+            return redirect('base')
     else:
         form = PostForm()
     return render(request, 'planer/post_edit.html', {'form': form})
@@ -50,7 +45,19 @@ def post_edit(request, pk):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('post_detail', pk=post.pk)
+            return redirect('base')
     else:
         form = PostForm(instance=post)
     return render(request, 'planer/post_edit.html', {'form': form})
+
+def del_(request, id_):
+    Post.objects.get(id=id_).delete()
+    return redirect('base')
+
+def ready_plans(request):
+    c = calendar.HTMLCalendar()
+    html_out = c.formatmonth(datetime.today().year, datetime.today().month)
+    user=User.objects.get(username=request.user.username)
+    plans=Post.objects.filter(author=user).order_by("created_date")
+    return render(request, 'planer/ready_plans.html', {"plans":plans})
+
